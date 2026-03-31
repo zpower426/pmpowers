@@ -1,15 +1,19 @@
 {
   "name": "pmpowers",
   "version": "1.0.0",
-  "description": "Product-on-Purpose workflow engine for PMs, built on top of superpowers automation.",
+  "description": "Cross-platform AI collaboration engine for Product Managers. Embeds elite PM DNA into AI agents. Supports Claude Code, Cursor, and Gemini CLI.",
   "type": "module",
   "keywords": [
     "product-management",
-    "lean-startup",
-    "discovery",
-    "experimentation",
-    "ai-agent"
+    "ai-agents",
+    "ai-collaboration",
+    "product-on-purpose",
+    "superpowers",
+    "workflow-automation",
+    "pm-tools",
+    "claude-code",
+    "gemini-cli"
   ],
-  "author": "pmpowers",
+  "author": "zpower426",
   "license": "MIT"
 }

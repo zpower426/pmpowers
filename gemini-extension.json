@@ -1,7 +1,7 @@
 {
   "name": "pmpowers",
   "version": "1.0.0",
-  "description": "Product-on-Purpose workflow engine for PMs.",
+  "description": "Cross-platform AI collaboration engine for Product Managers. Embeds elite PM DNA into AI agents.",
   "skills": [
     "skills/customer-discovery",
     "skills/lean-experimentation",
@@ -11,7 +11,8 @@
     "skills/validation-guard",
     "skills/artifact-provenance",
     "skills/brainstorming",
-    "skills/writing-plans"
+    "skills/writing-plans",
+    "skills/using-pmpowers"
   ],
   "hooks": {
     "session-start": "hooks/session-start"
