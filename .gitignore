@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+
+# Privacy & Bak (Mandatory)
+super_bak/
+
+# Pmpowers Runtime State
+.pmpowers/temp/
+.pmpowers/brainstorm/*/state/server.pid
+.pmpowers/brainstorm/*/state/server.log
+.pmpowers/brainstorm/*/state/server-info
+
+# Local Environment
+.env
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/

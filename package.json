@@ -1,0 +1,15 @@
+{
+  "name": "pmpowers",
+  "version": "1.0.0",
+  "description": "Product-on-Purpose workflow engine for PMs, built on top of superpowers automation.",
+  "type": "module",
+  "keywords": [
+    "product-management",
+    "lean-startup",
+    "discovery",
+    "experimentation",
+    "ai-agent"
+  ],
+  "author": "pmpowers",
+  "license": "MIT"
+}

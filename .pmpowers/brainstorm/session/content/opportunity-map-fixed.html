@@ -1,0 +1,33 @@
+<h1>Opportunity Mapping: 解决协同对齐痛点</h1>
+<p class="subtitle">Outcome: 提升每周生成的有效 Spec 数量</p>
+
+<div class="mermaid">
+graph TD
+    Outcome[业务结果: 提升有效 Spec 产出量]
+    Opp1[机会: 研发/设计反馈周期太长]
+    Opp2[机会: 不同职能对 Spec 理解不一致]
+    
+    Sol1[方案: AI 自动生成可视化 User Flow]
+    Sol2[方案: 实时协作评审沙盒]
+    Sol3[方案: 自动将 Spec 转化为交互原型]
+    Sol4[方案: 多职能视角语义翻译器]
+    
+    Outcome --> Opp1
+    Outcome --> Opp2
+    
+    Opp1 --> Sol1
+    Opp1 --> Sol2
+    Opp2 --> Sol3
+    Opp2 --> Sol4
+    
+    Exp1[实验: 原型交付点击测试]
+    Sol3 --> Exp1
+</div>
+
+<div class="section">
+    <h3>核心假设 (RAT)</h3>
+    <ul>
+        <li><strong>Desirability</strong>: 研发是否认为可视化比文字更能提升理解效率？</li>
+        <li><strong>Feasibility</strong>: AI 是否能 100% 准确地将 Spec 逻辑映射为交互原型？</li>
+    </ul>
+</div>

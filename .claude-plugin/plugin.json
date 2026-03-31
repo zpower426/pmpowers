@@ -1,0 +1,21 @@
+{
+  "name": "pmpowers",
+  "description": "Product-on-Purpose workflow for PMs: Discovery, Strategy, Shaping, Communication, and Execution patterns",
+  "version": "1.0.0",
+  "author": {
+    "name": "pmpowers Contributors",
+    "email": "pmpowers@example.com"
+  },
+  "homepage": "https://github.com/your-org/pmpowers",
+  "repository": "https://github.com/your-org/pmpowers",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "skills",
+    "discovery",
+    "lean-startup",
+    "metrics",
+    "agile",
+    "strategy"
+  ]
+}

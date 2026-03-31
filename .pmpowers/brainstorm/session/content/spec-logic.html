@@ -1,0 +1,26 @@
+# Spec Draft: 会员订阅功能 (A 方案: 开发者赞助 + 荣誉勋章)
+
+```mermaid
+sequenceDiagram
+    participant User as 用户 (User)
+    participant Platform as 平台界面 (Platform UI)
+    participant DB as 数据库/后端 (DB/Backend)
+    participant NSM as 北极星指标 (Revenue)
+
+    User->>Platform: 点击 "成为赞助者"
+    Platform->>User: 展示订阅档位 (Tier 1/Tier 2)
+    User->>Platform: 选择并支付
+    Platform->>DB: 验证支付 & 授予勋章 (Badge)
+    DB->>NSM: 累加收入 (+Amount)
+    DB->>Platform: 同步勋章状态
+    Platform->>User: 在用户昵称旁展示 "发光勋章" (Glittering Badge)
+```
+
+## 核心验收标准 (AC)
+1. **AC 1**: 用户在任何页面点击赞助，必须能看到清晰的档位对比。
+2. **AC 2**: 支付成功后，必须在 5s 内在用户个人主页和所有评论区展示勋章。
+3. **AC 3**: 如果订阅过期，勋章必须在 24h 内自动进入“休眠灰”状态。
+
+## VDD 验证点
+- **Revenue**: 每次支付都必须准确计入北极星指标。
+- **Desirability**: 勋章的视觉表现必须足够吸引用户（ABC 原则：引导用户追求社交货币）。

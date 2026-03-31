@@ -1,0 +1,67 @@
+<h2>步骤 4：精益验证 (RAT - Riskiest Assumption Test)</h2>
+<p class="subtitle">方案：浏览器插件一键批量抓取</p>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">当前流程：手动采集 (As-Is)</div>
+    <div class="mockup-body">
+      <ul>
+        <li>1. 打开目标网页</li>
+        <li>2. 寻找标签元素</li>
+        <li>3. 复制文本/链接</li>
+        <li>4. 切换回平台粘贴</li>
+        <li><strong>耗时: ~45s / 标签</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">预期流程：插件抓取 (To-Be)</div>
+    <div class="mockup-body">
+      <ul>
+        <li>1. 在网页点击插件图标</li>
+        <li>2. 自动识别并预览所有标签</li>
+        <li>3. 点击“全选入库”</li>
+        <li>4. 自动后台同步</li>
+        <li><strong>预期耗时: ~2s / 标签</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 2rem;">
+  <div class="label">验证假设 (Wait for your confirmation)</div>
+  <div class="options">
+    <div class="option" data-choice="desirability" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content">
+        <h3>欲望假设 (Desirability)</h3>
+        <p>用户是否真的需要“批量”？还是他们更在意单条标签的“精准度”？</p>
+      </div>
+    </div>
+    <div class="option" data-choice="feasibility" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content">
+        <h3>技术可行性 (Feasibility)</h3>
+        <p>插件是否能稳定识别 80% 以上主流站点的非结构化标签数据？</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pros-cons">
+  <div class="pros">
+    <h4>成功标准 (Pass)</h4>
+    <ul>
+      <li>采集速度提升 > 10 倍</li>
+      <li>用户单次点击抓取数量 > 5 条</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h4>失败标准 (Fail)</h4>
+    <ul>
+      <li>识别准确率 < 70%</li>
+      <li>插件导致网页崩溃或加载极慢</li>
+    </ul>
+  </div>
+</div>

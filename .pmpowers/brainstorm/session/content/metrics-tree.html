@@ -1,0 +1,27 @@
+# North Star Metric: AI 驱动的产品经理协作平台
+
+```mermaid
+graph TD
+    NSM[北极星指标: 每周生成的有效 Spec 数量]
+    
+    L1_1[Reach: 每周活跃 PM 人数]
+    L1_2[Activation: 首次完成完整 VDD 流程的用户数]
+    L1_3[Engagement: 每个用户平均调用的技能数]
+    L1_4[Quality: 通过 Validation Guard 的 Spec 比例]
+    
+    NSM --> L1_1
+    NSM --> L1_2
+    NSM --> L1_3
+    NSM --> L1_4
+    
+    L2_1[新访谈录入量]
+    L2_2[实验报告生成量]
+    
+    L1_1 --> L2_1
+    L1_3 --> L2_2
+```
+
+## 指标验证 (Validation Matrix)
+- **价值性**: Spec 数量越多，意味着团队的共识和逻辑资产越多。 (✅)
+- **领先性**: 有效 Spec 量的增长预示着后续研发效率的提升。 (✅)
+- **可操作性**: 可以通过优化 AI 引导流程来提升 Spec 产出效率。 (✅)

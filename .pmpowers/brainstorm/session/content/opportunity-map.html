@@ -1,0 +1,28 @@
+# Opportunity Mapping: 会员订阅功能 (尊贵身份/去广告)
+
+```mermaid
+graph TD
+    Outcome[业务结果: 提升收入 Revenue]
+    Opp1[机会: 用户追求社交地位/独特性]
+    Opp2[机会: 用户反感商业干扰/渴望极简]
+    
+    Sol1[方案: 全球排行/专属徽章]
+    Sol2[方案: 动态/发光昵称]
+    Sol3[方案: 彻底移除第三方广告]
+    Sol4[方案: 极简纯净界面选项]
+    
+    Outcome --> Opp1
+    Outcome --> Opp2
+    
+    Opp1 --> Sol1
+    Opp1 --> Sol2
+    Opp2 --> Sol3
+    Opp2 --> Sol4
+    
+    Exp1[实验: 预购徽章点击测试]
+    Sol1 --> Exp1
+```
+
+## 核心假设 (RAT)
+1. **Desirability**: 开源用户是否真的在乎“尊贵身份”？
+2. **Viability**: 广告移除后的收入是否能覆盖订阅费的成本？

@@ -1,0 +1,51 @@
+<h2>步骤 3：机会映射 (Opportunity Mapping)</h2>
+<p class="subtitle">目标：提升每周成功入库的有效标签数量</p>
+
+<div class="label">选择我们要优先解决的痛点（机会）：</div>
+
+<div class="cards">
+  <div class="card" data-choice="semi-auto" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-size: 3rem;">🤖</div>
+    </div>
+    <div class="card-body">
+      <h3>半自动标注/识别</h3>
+      <p>解决痛点：手动输入标签太慢，且容易出错。通过 AI 预识别提升录入速度。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="api-integration" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-size: 3rem;">🔌</div>
+    </div>
+    <div class="card-body">
+      <h3>插件/API 批量抓取</h3>
+      <p>解决痛点：逐个页面打开太低效。通过浏览器插件一键抓取整页标签数据。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="collaborative-qc" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-size: 3rem;">👥</div>
+    </div>
+    <div class="card-body">
+      <h3>协同校验机制</h3>
+      <p>解决痛点：入库标签质量参差不齐，重复审核。通过众包校验提升入库合格率。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 2rem;">
+  <div class="label">OST 逻辑拓扑</div>
+  <div class="mockup">
+    <div class="mockup-header">预览：采集效率拆解</div>
+    <div class="mockup-body">
+      <div style="background: #f0f0f0; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.8rem;">
+        Outcome: 提升入库数量<br>
+        ├── Opportunity: 录入过程太长 -> Solution: AI 预填充<br>
+        ├── Opportunity: 寻找来源太慢 -> Solution: 爬虫/插件抓取<br>
+        └── Opportunity: 审核驳回率高 -> Solution: 自动纠错引擎
+      </div>
+    </div>
+  </div>
+</div>

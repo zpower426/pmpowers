@@ -1,0 +1,61 @@
+<h2>展示原型：标签采集插件 v1.0</h2>
+<p class="subtitle">模拟在第三方网页（如 GitHub/Reddit）上运行的交互效果</p>
+
+<!-- 模拟底层网页内容 -->
+<div style="position: relative; background: #fff; border: 1px solid #eee; padding: 20px; color: #ccc; user-select: none;">
+    <div style="margin-bottom: 10px; width: 60%; height: 10px; background: #f0f0f0;"></div>
+    <div style="margin-bottom: 10px; width: 80%; height: 10px; background: #f0f0f0;"></div>
+    
+    <!-- 模拟被高亮的标签 -->
+    <span style="display: inline-block; padding: 2px 8px; background: rgba(0, 113, 227, 0.1); border: 1px dashed var(--accent); color: var(--accent); border-radius: 4px; font-size: 12px; margin-right: 10px;">
+        #OpenSource
+    </span>
+    <span style="display: inline-block; padding: 2px 8px; background: rgba(0, 113, 227, 0.1); border: 1px dashed var(--accent); color: var(--accent); border-radius: 4px; font-size: 12px; margin-right: 10px;">
+        #AI_Agent
+    </span>
+    <div style="margin-top: 15px; width: 40%; height: 10px; background: #f0f0f0;"></div>
+
+    <!-- 模拟插件侧边栏 -->
+    <div style="position: absolute; right: 0; top: 0; bottom: 0; width: 300px; background: var(--bg-secondary); border-left: 1px solid var(--border); box-shadow: -4px 0 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+        <div style="padding: 15px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+            <strong style="font-size: 14px;">Pmpowers 采集器</strong>
+            <span style="font-size: 10px; color: var(--text-tertiary);">发现 12 个标签</span>
+        </div>
+        
+        <div style="flex: 1; padding: 15px; overflow-y: auto;">
+            <div class="label" style="margin-bottom: 10px;">待确认入库</div>
+            
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <!-- 标签条目 1 -->
+                <div style="padding: 8px; background: var(--selected-bg); border: 1px solid var(--selected-border); border-radius: 6px; display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" checked>
+                    <span style="font-size: 13px; color: var(--text-primary);">#OpenSource</span>
+                </div>
+                <!-- 标签条目 2 -->
+                <div style="padding: 8px; background: var(--selected-bg); border: 1px solid var(--selected-border); border-radius: 6px; display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" checked>
+                    <span style="font-size: 13px; color: var(--text-primary);">#AI_Agent</span>
+                </div>
+                <!-- 标签条目 3 -->
+                <div style="padding: 8px; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 6px; display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox">
+                    <span style="font-size: 13px; color: var(--text-secondary);">#Framework</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 15px; border-top: 1px solid var(--border); background: var(--bg-primary);">
+            <button class="mock-button" style="width: 100%; font-weight: 600;">确认并批量入库 (2)</button>
+            <p style="font-size: 10px; color: var(--text-tertiary); margin-top: 8px; text-align: center;">数据将对齐至：采集效率 (Efficiency)</p>
+        </div>
+    </div>
+</div>
+
+<div class="section" style="margin-top: 2rem;">
+    <h3>原型关键点说明</h3>
+    <ul>
+        <li><strong>视觉锚点</strong>: 网页中的标签会被自动识别并施加“虚线高亮”，建立心理连接。</li>
+        <li><strong>半自动确认</strong>: 右侧抽屉默认勾选高置信度标签，用户只需一次点击即可完成批量入库。</li>
+        <li><strong>指标绑定</strong>: 每一个采集操作都会在后台同步至北极星指标监控。</li>
+    </ul>
+</div>

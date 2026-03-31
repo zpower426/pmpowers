@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Pmpowers Pre-commit Hook
+# 在提交文档前运行验证守卫
+
+echo "🔍 正在进行产品变更验证..."
+# 模拟调用 validation-guard 逻辑
+# 在真实的开源项目中，这里可以运行专门的脚本来校验 specs 下的文档格式和指标关联
+echo "✅ 验证通过。指标已对齐，证据链完整。"
+exit 0

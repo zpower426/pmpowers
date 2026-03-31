@@ -1,0 +1,20 @@
+{
+  "name": "pmpowers-dev",
+  "description": "Development marketplace for Pmpowers PM skills library",
+  "owner": {
+    "name": "pmpowers",
+    "email": "pmpowers@example.com"
+  },
+  "plugins": [
+    {
+      "name": "pmpowers",
+      "description": "24+ Professional PM Skills: Discovery, Strategy, Shaping, Communication, and Execution",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "pmpowers",
+        "email": "pmpowers@example.com"
+      }
+    }
+  ]
+}

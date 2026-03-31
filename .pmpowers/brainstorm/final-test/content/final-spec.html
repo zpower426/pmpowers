@@ -1,0 +1,42 @@
+<h2>最终交付：标签采集插件逻辑规约 (Spec v1.0)</h2>
+<p class="subtitle">重点：兼顾批量效率与用户确认 (解决 Desirability 疑虑)</p>
+
+<div class="mockup">
+  <div class="mockup-header">用户故事 (User Story)</div>
+  <div class="mockup-body">
+    <p><strong>As a</strong> 标签采集员, <strong>I want to</strong> 一键识别页面所有标签并能快速勾选, <strong>So that</strong> 我既能享受批量的高效，又能保留人工审核的精准度。</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="label">交互逻辑协议 (Sequence)</div>
+  <div style="background: #ffffff; border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
+    <ol style="font-size: 0.9rem; line-height: 1.8;">
+      <li>1. 用户在第三方页面点击 [Pmpowers] 悬浮球。</li>
+      <li>2. 插件运行 DOM 扫描算法，识别 <code>class/tag</code> 特征元素。</li>
+      <li>3. <strong>关键步骤</strong>：弹出侧边抽屉，列表化展示识别到的所有标签。</li>
+      <li>4. 用户点击 "全选" 或 "手动勾选" 目标标签。</li>
+      <li>5. 用户点击 "确认入库"，插件调用 <code>/api/v1/tags/batch</code> 接口。</li>
+    </ol>
+  </div>
+</div>
+
+<div class="pros-cons">
+  <div class="pros">
+    <h4>验收标准 (AC)</h4>
+    <ul>
+      <li>AC 1: 扫描过程不得阻塞用户正常网页浏览。</li>
+      <li>AC 2: 抽屉内必须支持实时编辑标签文本。</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h4>风险守卫 (Guard)</h4>
+    <ul>
+      <li>如果单页标签 > 50 个，必须提示用户进行分类。</li>
+    </ul>
+  </div>
+</div>
+
+<div class="indicator-bar" style="margin-top: 2rem; background: var(--success); color: white; border-radius: 8px;">
+  🏁 设计已就绪！请返回终端查看正式文档。
+</div>

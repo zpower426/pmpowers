@@ -1,0 +1,19 @@
+{
+  "name": "pmpowers",
+  "version": "1.0.0",
+  "description": "Product-on-Purpose workflow engine for PMs.",
+  "skills": [
+    "skills/customer-discovery",
+    "skills/lean-experimentation",
+    "skills/north-star-metric",
+    "skills/opportunity-mapping",
+    "skills/spec-driven-design",
+    "skills/validation-guard",
+    "skills/artifact-provenance",
+    "skills/brainstorming",
+    "skills/writing-plans"
+  ],
+  "hooks": {
+    "session-start": "hooks/session-start"
+  }
+}
